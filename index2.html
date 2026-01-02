@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Seminar for Management Goal Achievement</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F49E2D", // Orange from the CTA button
+              "primary-hover": "#d68315",
+              "background-light": "#F3F4F6", // Light gray
+              "background-dark": "#1F2937", // Dark gray
+              "accent-red": "#D32F2F", // Red for highlights
+              "text-dark": "#111827",
+              "text-light": "#F9FAFB",
+            },
+            fontFamily: {
+              display: ["'Noto Sans JP'", "sans-serif"],
+              sans: ["'Noto Sans JP'", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.375rem",
+              xl: "1rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Noto Sans JP", sans-serif;
+      }
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #f3f4f6;
+      }
+      .dark .triangle-down {
+        border-top-color: #1f2937;
+      }
+      .bg-pattern-dark {
+        background-color: #1f2937;
+        background-image: radial-gradient(#374151 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-text-dark dark:text-text-light antialiased"
+  >
+    <header
+      class="relative bg-[#E8E8E8] dark:bg-gray-800 pb-12 pt-16 overflow-hidden"
+    >
+      <div
+        class="container mx-auto px-4 max-w-5xl relative z-10 flex flex-col md:flex-row items-center"
+      >
+        <div class="md:w-3/5 text-left md:pr-8">
+          <h1
+            class="text-3xl md:text-5xl font-bold leading-tight mb-6 text-gray-900 dark:text-white"
+          >
+            社長、あなたは優秀です。<br />
+            会社が伸びないのは、<br />
+            管理職が「目標達成のやり方」を<br />
+            <span class="border-b-4 border-primary">知らないだけです。</span>
+          </h1>
+          <p class="text-sm md:text-base mb-4 text-gray-700 dark:text-gray-300">
+            私は、トップセールスに頼らず、<br />
+            チームで全国No.1を取り続けた<br />
+            目標達成の仕組みを管理職育成に落とし込んできました。
+          </p>
+          <p
+            class="text-lg md:text-xl font-bold text-gray-800 dark:text-gray-200"
+          >
+            社長は、もっと楽をしていい。
+          </p>
+        </div>
+        <div class="md:w-2/5 mt-8 md:mt-0 relative">
+          <div
+            class="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-lg shadow-xl"
+          >
+            <img
+              alt="Smiling business man in white shirt"
+              class="w-full h-full object-cover object-top filter grayscale contrast-125"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC67e1Zzt5WkEGjf2xXnHbcLaAw5a74NIxGjcDOfBrDoXpY1XHqz8vbLSua5xy84GDM3k4HR7qSMNlTbWX52RJkxZANBaFg5MkWfiY6abAYMu0Yh24Z71KBfSDVzNC2gt4KEcpfv0bknExNmc5eEu5hESCvUW1vSZF8IuY2jbYxrfrJ2noE_s39IaMraZfPkrBdOikPneitZgW_IwgWJURhaXDWI0Ih3hyZBb0OZiJq4UILxZrzb5VKiB7SXw2vkofjC6cNFDbWN6Q"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-gray-200/50 to-transparent dark:from-gray-800/50"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section
+      class="bg-gray-100 dark:bg-gray-900 py-10 flex justify-center border-t border-b border-gray-200 dark:border-gray-700"
+    >
+      <div class="w-full max-w-2xl px-4">
+        <a
+          class="group block w-full bg-white dark:bg-gray-800 border-4 border-gray-500 dark:border-gray-600 p-2 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+          href="#"
+        >
+          <div
+            class="bg-primary flex items-center justify-between px-6 py-4 rounded text-white font-bold text-lg md:text-xl relative overflow-hidden"
+          >
+            <span class="flex items-center">
+              <div
+                class="bg-white text-primary rounded-full w-12 h-12 flex items-center justify-center mr-4 shrink-0 font-bold text-sm border-2 border-primary"
+              >
+                今すぐ
+              </div>
+              <div class="flex flex-col">
+                <span class="text-sm font-normal opacity-90"
+                  >管理職の<span
+                    class="text-white font-bold border-b border-white"
+                    >目標達成力</span
+                  >を</span
+                >
+                <span>高める無料セミナーへ</span>
+              </div>
+            </span>
+            <span
+              class="material-icons transform group-hover:translate-x-1 transition-transform"
+              >arrow_forward_ios</span
+            >
+            <div
+              class="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-20 group-hover:animate-shine"
+            ></div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="relative bg-black text-white py-16 md:py-24">
+      <div class="absolute inset-0 z-0 opacity-40">
+        <img
+          alt="Business team in meeting"
+          class="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoIyIfdY-gkcIRh7Muweh8gnnh-CNecrLTob0WHDkp327REmJUQcBA3pXE4GjmQ_7hvm56I9pXRz0g0plEo41YcWSqdyVnEal0f5w2V5SV2pmfuedMbDobFcYc5JKP6LUZs2Hwg6LwAWpkmg62OAgTkfdhgsIQML9LFAIw2Z9j366QfPq3YN-lJeDqOxRuQaiqmDKWzd4UGhlUrTegCyll13nRt9-SysQp7l8s3pb4RvhxSBRUpGN66c871ZnticI_5-eED7LEb90"
+        />
+      </div>
+      <div class="relative z-10 container mx-auto px-4 text-center">
+        <h2 class="text-2xl md:text-4xl font-bold mb-4">
+          こんな管理職に、<br class="md:hidden" />正直、限界を感じていませんか？
+        </h2>
+        <div class="w-16 h-1 bg-white mx-auto mt-6"></div>
+      </div>
+      <div
+        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full z-20 w-0 h-0 border-l-[30px] border-l-transparent border-r-[30px] border-r-transparent border-t-[30px] border-t-black"
+      ></div>
+    </section>
+    <section class="bg-[#F3F4F6] dark:bg-gray-800 py-16 pt-24">
+      <div class="container mx-auto px-4 max-w-3xl">
+        <div
+          class="bg-white dark:bg-gray-700 shadow-xl rounded-lg p-8 md:p-12 relative"
+        >
+          <div
+            class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-b-[20px] border-b-white dark:border-b-gray-700"
+          ></div>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span
+                class="material-icons text-black dark:text-white mr-3 text-sm pt-1"
+                >check</span
+              >
+              <p class="font-bold text-gray-800 dark:text-gray-200">
+                毎回、<span class="text-accent-red font-black">目標未達</span>
+              </p>
+            </li>
+            <li
+              class="flex items-start border-t border-gray-200 dark:border-gray-600 pt-3"
+            >
+              <span
+                class="material-icons text-black dark:text-white mr-3 text-sm pt-1"
+                >check</span
+              >
+              <p class="font-bold text-gray-800 dark:text-gray-200">
+                理由はいつも<span class="text-accent-red font-black"
+                  >「想定外」「環境のせい」「部下のせい」</span
+                >
+              </p>
+            </li>
+            <li
+              class="flex items-start border-t border-gray-200 dark:border-gray-600 pt-3"
+            >
+              <span
+                class="material-icons text-black dark:text-white mr-3 text-sm pt-1"
+                >check</span
+              >
+              <p class="font-bold text-gray-800 dark:text-gray-200">
+                数字の話になると、<span class="text-accent-red font-black"
+                  >説明が曖昧</span
+                >
+              </p>
+            </li>
+            <li
+              class="flex items-start border-t border-gray-200 dark:border-gray-600 pt-3"
+            >
+              <span
+                class="material-icons text-black dark:text-white mr-3 text-sm pt-1"
+                >check</span
+              >
+              <p class="font-bold text-gray-800 dark:text-gray-200">
+                計画は立てるが、<span class="text-accent-red font-black"
+                  >途中で崩れる</span
+                >
+              </p>
+            </li>
+            <li
+              class="flex items-start border-t border-gray-200 dark:border-gray-600 pt-3"
+            >
+              <span
+                class="material-icons text-black dark:text-white mr-3 text-sm pt-1"
+                >check</span
+              >
+              <p class="font-bold text-gray-800 dark:text-gray-200">
+                結局、社長が口を出さないと<span
+                  class="text-accent-red font-black"
+                  >進まない</span
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-16 text-center max-w-2xl mx-auto">
+          <h3
+            class="text-2xl md:text-3xl font-bold mb-6 text-gray-900 dark:text-white"
+          >
+            悪いのは、あなたではありません
+          </h3>
+          <p class="mb-4 text-gray-700 dark:text-gray-300">
+            会社が伸びない原因は、<br />社長の<span
+              class="text-accent-red font-bold text-xl"
+              >判断力</span
+            >や<span class="text-accent-red font-bold text-xl">努力不足</span
+            >ではありません。
+          </p>
+          <p
+            class="mb-6 text-gray-700 dark:text-gray-300 text-sm leading-relaxed"
+          >
+            あなたは、意思決定も、方向性も、間違っていない。<br />
+            ただ一つ足りないのは、管理職が「目標をどう達成するか」を<br />体系的に学んでいないこと。
+          </p>
+          <div
+            class="bg-gray-200 dark:bg-gray-700 p-6 rounded-lg inline-block text-left shadow-inner"
+          >
+            <p class="mb-2 text-gray-800 dark:text-gray-200">
+              <span class="text-accent-red font-bold text-lg">管理職</span>が
+              <span class="text-accent-red">-目標を分解し</span>
+            </p>
+            <p class="mb-2 pl-16 text-accent-red">-障害を予測し</p>
+            <p class="mb-2 pl-16 text-accent-red">-行動を設計し</p>
+            <p class="mb-4 pl-16 text-accent-red">-修正しながらやり切る</p>
+            <p
+              class="text-gray-800 dark:text-gray-200 font-bold text-center border-t border-gray-400 dark:border-gray-500 pt-4"
+            >
+              この<span class="text-accent-red text-xl">力</span
+              >を身につければ、会社は必ず変わります。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white dark:bg-gray-900 py-16">
+      <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h2
+          class="text-2xl md:text-3xl font-bold mb-10 text-gray-900 dark:text-white"
+        >
+          管理職の“目標達成力”が上がると、<br />
+          <span class="border-b-2 border-gray-900 dark:border-gray-100 pb-1"
+            >会社の馬力は、ここまで変わります。</span
+          >
+        </h2>
+        <div
+          class="flex flex-col md:flex-row shadow-2xl rounded-lg overflow-hidden"
+        >
+          <div class="md:w-1/2 h-64 md:h-auto bg-gray-300">
+            <img
+              alt="Effective team working"
+              class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBirWdB55zF6IfcU01t_zLRt6q3lbr9ziEBFCsTqGukRo9g3a8vHunk5-QmTc0yJGmPTFgFzPiNPpzVfxG7KWPzvth4YSdd0pc0NYprby-2husZmbNIeWydCm7SYWvQsV5BdOOBuE9eT2i5xukACdM9_KfYO1NgM_-wHbm-0Z1qLRSzxkHmzy4eZTiUTj_X1fL9ug_84FZI7XSTsnAVxREy5GQipgl56fz6-KCHumoK91RNOXO8u9zwxyyUodCJZ2RPDQknjfK9sd0"
+            />
+          </div>
+          <div
+            class="md:w-1/2 bg-[#FDEebd] dark:bg-yellow-900/40 p-8 md:p-12 text-left flex flex-col justify-center"
+          >
+            <ul
+              class="space-y-4 text-sm md:text-base text-gray-800 dark:text-gray-200 list-disc pl-5 marker:text-gray-500"
+            >
+              <li>毎月の数字が「結果」ではなく予測できる数字になる</li>
+              <li>会議が言い訳の場から作戦会議に変わる</li>
+              <li>管理職が自分で考え、修正し、やり切る</li>
+              <li>社長は細かい管理・火消しから解放される</li>
+              <li>優秀な社長は、本来の経営者の仕事に集中できるようになる</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-gradient-to-b from-gray-400 to-gray-200 dark:from-gray-700 dark:to-gray-800 py-16 relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-x-0 bottom-0 h-32 bg-gray-900 clip-path-polygon"
+      ></div>
+      <div class="container mx-auto px-4 max-w-3xl relative z-10">
+        <div
+          class="bg-gray-800/80 text-white p-2 inline-block mb-2 font-bold text-sm"
+        >
+          なぜ多くの管理職は、「頑張っているのに」、
+        </div>
+        <div
+          class="bg-gray-800/80 text-white p-2 inline-block mb-8 font-bold text-lg"
+        >
+          目標を達成できないのか？
+        </div>
+        <div
+          class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm p-8 rounded shadow-lg text-left"
+        >
+          <p class="mb-4 text-gray-900 dark:text-gray-100 font-bold">
+            <span class="text-accent-red font-bold">理由</span>は<span
+              class="text-accent-red"
+              >シンプル</span
+            >です。
+          </p>
+          <p class="mb-4 text-gray-900 dark:text-gray-100 font-bold">
+            <span class="text-accent-red font-bold">目標</span>が<span
+              class="text-accent-red"
+              >「数字」</span
+            >で止まっている
+          </p>
+          <ul
+            class="list-none space-y-2 pl-4 text-sm text-gray-800 dark:text-gray-300"
+          >
+            <li>-達成までのプロセスが設計されていない</li>
+            <li>-障害を事前に想定していない</li>
+            <li>-行動が止まった理由を意識や根性で片づけている</li>
+            <li>-修正の仕方を知らない</li>
+          </ul>
+        </div>
+        <div class="mt-12 text-center">
+          <p class="text-gray-900 dark:text-gray-100 text-lg font-bold mb-2">
+            才能の問題ではありません。
+          </p>
+          <p
+            class="text-3xl font-black text-accent-red shadow-white drop-shadow-md"
+          >
+            “やり方”<span
+              class="text-gray-900 dark:text-gray-100 text-xl font-bold"
+              >を知らないだけです。</span
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-[#1a1a1a] dark:bg-black text-white py-20 relative clip-path-chevron-bottom"
+    >
+      <div class="container mx-auto px-4 max-w-3xl text-center">
+        <h3 class="text-2xl font-bold mb-4 text-[#F49E2D]">
+          私がやってきたこと
+        </h3>
+        <p class="text-xs text-gray-400 mb-8">
+          私は、スズキアリーナディーラーで 全国<span
+            class="text-red-500 font-bold"
+            >NO.1</span
+          >の営業チームを育てました。
+        </p>
+        <p class="text-xl font-bold mb-6">
+          <span class="text-[#F49E2D]">しかし、</span
+          ><span class="text-sm font-normal"
+            >やったのはカリスマ営業を育てることではありません。</span
+          >
+        </p>
+        <div
+          class="text-sm md:text-base leading-relaxed text-gray-300 space-y-2 mb-8 inline-block text-left"
+        >
+          <p>- トップセールスに頼らない</p>
+          <p>- 誰かが辞めても崩れない</p>
+          <p>- 誰がやっても一定以上売れる</p>
+          <p>
+            - 売れている人の「仕組み」を分解し、<br />  コピーし、再現できる形に落とす。
+          </p>
+        </div>
+        <p class="text-xl font-bold">
+          <span class="text-[#F49E2D]">さらに、</span
+          ><span class="text-sm font-normal"
+            >目標達成を阻害する障害をすべて洗い出し、最も<br />影響の大きいポイントに集中する。</span
+          >
+        </p>
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-full h-16 bg-white dark:bg-gray-900 clip-path-triangle-up"
+      ></div>
+    </section>
+    <style>
+      .clip-path-triangle-up {
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+      }
+    </style>
+    <section class="bg-white dark:bg-gray-900 py-16">
+      <div class="container mx-auto px-4 max-w-4xl text-center">
+        <h3 class="text-red-600 font-bold text-lg md:text-xl mb-2">
+          個人向け目標達成メカニズムを、管理職・チーム用に最適化した
+        </h3>
+        <h2 class="text-2xl md:text-3xl font-black text-red-600 mb-12">
+          《チーム目標達成メカニズム》
+        </h2>
+        <div
+          class="bg-gray-100 dark:bg-gray-800 rounded-lg p-8 relative flex flex-col md:flex-row items-center"
+        >
+          <div class="md:w-2/3 text-left z-10">
+            <h4 class="font-bold text-xl mb-4 text-gray-900 dark:text-white">
+              これは、
+            </h4>
+            <ul
+              class="list-none space-y-2 text-gray-700 dark:text-gray-300 text-sm md:text-base pl-4 border-l-2 border-gray-300 dark:border-gray-600 ml-2"
+            >
+              <li>・チーム目標を構造的に理解し</li>
+              <li>・達成までのフェーズを設計し</li>
+              <li>・必要な行動・スキルを明確にし</li>
+              <li>・障害を事前に潰し</li>
+              <li>・修正しながら必ず前進させる</li>
+            </ul>
+            <p class="font-bold mt-4 text-gray-900 dark:text-white">
+              ための再現性ある仕組みです。
+            </p>
+          </div>
+          <div class="md:w-1/3 mt-6 md:mt-0 relative">
+            <img
+              alt="Man pointing"
+              class="rounded-full w-48 h-48 object-cover border-4 border-white shadow-lg mx-auto filter grayscale contrast-125"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5qAdLlu9nWSAo1P-hvqzhKfyIaPJNGCv73dZs4XT5Ih_3ZzlVK5AI8KBar7dnKj7RzpW4e9VJCBLqIhTGtsan2RrjLHsDOdB5KpzuK69HnNT9JR6jbXfOA3unq_5pGOZa9A2uy914TJAD4i5vfuc2YKipKJR8nxxEYYNDWButR3L38-4Qb8OsPfw2oOwPIX9zWU5G4pCtNom1EKd8oVsyzfehxZXwHt7sdB1l2O7j1EaSdHTYuV3NYP6jniDJPBftZa6nVMGt4XA"
+            />
+          </div>
+          <div
+            class="absolute bottom-4 left-4 right-4 bg-[#F8E76C] dark:bg-yellow-700/50 p-3 rounded text-xs md:text-sm text-center font-bold text-gray-800 dark:text-gray-100 shadow-sm"
+          >
+            私はこれを使って、管理職が 「毎回、目標を達成できる力」 を<br />習得できるよう支援してきました。
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-gradient-to-b from-white to-gray-200 dark:from-gray-900 dark:to-gray-800 py-16 relative"
+    >
+      <div class="absolute inset-0 opacity-10 pointer-events-none">
+        <img
+          alt="Meeting background"
+          class="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBClVxrVzro5DmESLkjxc6AsVS4wZw2lWU9ls3Itl8_HZfeyIb5YNPG8rh8TBiylaYXDk1eovBXFT2dFaqdy5gCNcVb_-UCa7FogUhSpiUvqfxtpaoLg8_rK2MQFuCK2awzUvKEvJyrGLA9SMcbVncTy_opC0u_lF9wHxHw6AmM-MM9SGkzPZaZy43BUuME7luuuXozkbP5PYQ1jC_o32iU6pX0EEOJy_U-jxKqAFtW_SJNFSHPmMP1G3L9NZuofm2yQR5yH52bIQg"
+        />
+      </div>
+      <div class="container mx-auto px-4 max-w-4xl relative z-10">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-red-600 mb-2 font-display">
+            1年後、
+          </h2>
+          <h3
+            class="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100"
+          >
+            あなたの会社がこうなっていたら？
+          </h3>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center mb-8 bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden"
+        >
+          <div class="md:w-1/3 h-48 md:h-full">
+            <img
+              alt="Morning Meeting"
+              class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmm1Sd2hITf2cIpY4h6aSowcfjpD_nrfgSVaLAwUX3npljCq4YMHw6_NQWxtNRl7ttsekA8Y_PV_T5gxr4jblc1k8lijmYORO4bWPHk4g4RO3rMFBmFfj9YjRFPJnv55A78pEqM_da2nXS-lv50ObUYCbULV65mxARk9FDFZrWF2CwfC7lkCYxmrKx4B_QfpnhDPFJ3tOrP-aI5QMsxxDLC0BXIwBTVMqkYQqE5lWbaPTFn3ATaTi73x7D1c025geCHSSTs2Lgkwk"
+            />
+          </div>
+          <div class="md:w-2/3 p-6">
+            <span
+              class="text-red-500 text-xs font-bold border border-red-500 px-2 py-1 rounded inline-block mb-3"
+              >月曜の朝</span
+            >
+            <ul class="text-sm space-y-2 text-gray-700 dark:text-gray-300">
+              <li>-管理職が、</li>
+              <li>数字・課題・次の一手を整理して待っている。</li>
+              <li>-会議は</li>
+              <li>「今週はこれで達成できます」から始まる。</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center bg-[#FDEebd] dark:bg-yellow-900/40 rounded-lg shadow-lg overflow-hidden border border-yellow-200 dark:border-yellow-900"
+        >
+          <div class="md:w-1/3 h-48 md:h-full">
+            <img
+              alt="Friday Night"
+              class="w-full h-full object-cover filter grayscale"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnyumFJlUE7xtyXmgmUmasE18F3_y1RfJKLudNq9YyriR3EhkoGI4beNIlgYiEUqdk7pdFMCkI5BAJHQ_-W2gLRKW_6BmJ8Ban-VNafxWfjBXDQ1wZ5fsY3jKUr9KlNTt9vvuDaTcXtO3sM0S_Mmg5xz6P198wGes8lV1XFmu-DcaF-aqpnQFlOsk1k8L_YD49ZuPcCqLUyj0e7uAGoOibXhoFGqLLzrbG516D0kckuVePnc1BW3RKcytKOH3WDiu0Eaj0AQPQKMc"
+            />
+          </div>
+          <div class="md:w-2/3 p-6">
+            <span
+              class="text-red-500 text-xs font-bold border border-red-500 px-2 py-1 rounded inline-block mb-3 bg-white/50"
+              >金曜の夜</span
+            >
+            <ul class="text-sm space-y-2 text-gray-800 dark:text-gray-200">
+              <li>-社長は、早めに会社を出る。</li>
+              <li>-スマホを見なくても不安はない。</li>
+              <li>-頭に浮かぶのは、次の事業・次の一手だけ。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative bg-black text-white py-20">
+      <div class="absolute inset-0 opacity-50">
+        <img
+          alt="Team discussion"
+          class="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqpaolfcWdUcrjhOKBFiOnTs1UwrTLmLynBvr8cdm-dK-MUZq-d2hhp8rJhOk7XiSbKdMMZzgWgD7EfbUepCa2V7ItSLlm6j3eYyDYMCIj2mhnWxHkVvmBuUw2kSjk5x900a6_4mMo874APIMyS4xOv3ODHytpXN3kFg39Vy4ukpYucmshagzQ99fS5O0BwQo6fOiQzaGzn9WmXI3kpPQkGfMnOD6TlcicQyU5xFQdU8Bg4vwApSyhokPyY8InIf89U6mW3gnTud0"
+        />
+      </div>
+      <div class="container mx-auto px-4 max-w-4xl relative z-10 text-center">
+        <div class="flex justify-center items-center mb-8">
+          <div
+            class="bg-white rounded-full p-1 w-24 h-24 md:w-32 md:h-32 overflow-hidden border-4 border-white shadow-xl flex-shrink-0 z-20 -mr-6"
+          >
+            <img
+              alt="Expert"
+              class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu4czZQ1rHXonPtLaLYQgrLEjHUestPGuXr2qEnK7ya8pwfP5RVpSXIzJII77Hi9-dOBDTMJQxJOjYwsyU9722Ul98dYajMPXbPf4pTA98ShXmFaf8Bc2l9Et2iW6Mi9W_1DzNUTgeAnOcYbb4059doIj9w6tqUg4085Sn4OmEO_8o4csxU5SJSneJ6-vag6npKlFS0ar8S_F_ixu3rERI-EtxlnLOujZOWgqhtm4X4vjRK_oYZ_hcq_3lNXZUETelImzmYgLTJCM"
+            />
+          </div>
+          <div
+            class="bg-black/60 backdrop-blur-sm p-4 md:p-6 rounded-r-xl border-l-4 border-red-500 text-left pl-10"
+          >
+            <span
+              class="bg-red-600 text-white text-xs px-2 py-1 rounded font-bold absolute top-0 left-8 transform -translate-y-1/2"
+              >実績・信頼</span
+            >
+            <h2 class="text-xl md:text-3xl font-bold leading-tight">
+              この<span class="text-[#F49E2D]">メカニズム</span
+              >が<br />現場で機能してきた<span class="text-[#F49E2D]"
+                >理由...</span
+              >
+            </h2>
+          </div>
+        </div>
+        <div
+          class="bg-black/70 p-8 rounded-lg text-left max-w-2xl mx-auto space-y-4"
+        >
+          <p class="text-sm md:text-base">
+            -スズキアリーナディーラー　全国No.1 営業チームを育成
+          </p>
+          <p class="text-sm md:text-base">-トップセールス依存から脱却</p>
+          <p class="text-sm md:text-base">-誰が抜けても数字が落ちない体制</p>
+          <p class="text-sm md:text-base">-売れている仕組みをコピーし育成</p>
+          <p class="text-sm md:text-base">-目標達成を阻害する特定・集中改善</p>
+          <div
+            class="bg-gray-600/80 text-center p-4 rounded mt-6 border border-gray-500"
+          >
+            <p class="text-[#F8E76C] font-bold text-lg">
+              偶然ではありません。<br />仕組みとして作ってきた結果です。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-100 dark:bg-gray-800 py-16">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div class="text-center mb-8">
+          <div
+            class="bg-[#333] text-white py-3 px-6 inline-block rounded font-bold text-lg md:text-xl shadow-lg"
+          >
+            管理職が「目標を達成できない理由」を<br />整理しませんか？
+          </div>
+        </div>
+        <div
+          class="bg-[#555] text-white rounded-lg shadow-xl overflow-hidden max-w-3xl mx-auto"
+        >
+          <div class="h-64 overflow-hidden relative">
+            <img
+              alt="Seminar Audience"
+              class="w-full h-full object-cover opacity-80"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgQw2MDLL9SH2Y0SKF9NcEPsQBDcTb3WZocXnrXPzbbwvG5_ivxjG5K_p4CpeeN3WjgLiKKDqiTw1ugvffFcLKwhMzc_MN-XgHzoIVJnKuIV72zFg3g-l3ob6rUUHLt7DhoFYSrNJCuxbQVPyNbsxFsBop-CRoeEIivHuqiy3KXRL-GMYeBAOVh9M4fEAYHZwBGUvnzLIw6FiPrYjVfOG3ySchPseUskV5mAqEkJ_MWMoA_YqXboK_Y9pNIzd7zh1N3xW3eWaWG_M"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#555] to-transparent"
+            ></div>
+          </div>
+          <div class="p-8 md:p-12 relative -mt-12">
+            <div class="space-y-6">
+              <div>
+                <h4 class="text-red-400 font-bold text-lg mb-2">
+                  -セミナー内容
+                </h4>
+                <ul class="list-none space-y-2 text-sm md:text-base">
+                  <li>なぜ管理職は目標未達を繰り返すのか</li>
+                  <li>目標達成できる管理職の思考と行動</li>
+                  <li>管理職の目標達成力をどう育成すればいいのか</li>
+                </ul>
+              </div>
+              <div class="border-t border-gray-400 pt-6">
+                <h4 class="text-red-400 font-bold text-lg mb-2">-特典</h4>
+                <div class="bg-white/10 p-4 rounded">
+                  <span
+                    class="bg-white text-gray-800 text-xs font-bold px-2 py-1 rounded mb-2 inline-block"
+                    >参加者限定</span
+                  >
+                  <p class="font-bold text-sm md:text-base mb-1">
+                    経営者向け個別診断セッション（無料）
+                  </p>
+                  <p class="text-xs text-gray-300">
+                    あなたの会社の目標達成を止めているポイントと最短ルートを明確にします。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#E8E8E8] dark:bg-gray-900 py-12 flex justify-center">
+      <div class="w-full max-w-2xl px-4">
+        <a
+          class="group block w-full bg-white dark:bg-gray-800 border-4 border-gray-500 dark:border-gray-600 p-2 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+          href="#"
+        >
+          <div
+            class="bg-primary flex items-center justify-between px-6 py-4 rounded-lg text-white font-bold text-lg md:text-xl relative overflow-hidden"
+          >
+            <span class="flex items-center">
+              <div
+                class="bg-white text-primary rounded-full w-12 h-12 flex items-center justify-center mr-4 shrink-0 font-bold text-sm border-2 border-primary"
+              >
+                今すぐ
+              </div>
+              <div class="flex flex-col text-left">
+                <span class="text-sm font-normal opacity-90"
+                  >無料セミナーに申し込む</span
+                >
+              </div>
+            </span>
+            <span
+              class="material-icons transform group-hover:translate-x-1 transition-transform"
+              >arrow_forward_ios</span
+            >
+            <div
+              class="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-20 group-hover:animate-shine"
+            ></div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <footer class="bg-[#1a1a1a] dark:bg-black text-white py-16 text-center">
+      <div class="container mx-auto px-4 max-w-3xl">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6">
+          社長が変わる必要はありません。<span class="text-2xl align-top"
+            >✨</span
+          ><br />
+          <span class="text-[#F49E2D]">管理職</span
+          >が変われば、会社は変わります。
+        </h2>
+        <p class="mb-4 text-gray-300">あなたは、もう十分頑張ってきました。</p>
+        <p class="mb-8 text-gray-300">
+          これ以上、社長一人で背負う必要はありません。
+        </p>
+        <p class="text-sm text-gray-400 leading-relaxed">
+          管理職が「目標を達成する力」を身につければ、会社は馬力を上げ、<br />
+          優秀なあなたはさらに高いステージへ進めます。
+        </p>
+      </div>
+    </footer>
+    <div
+      class="fixed bottom-0 left-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur border-t border-gray-200 dark:border-gray-700 p-4 z-50 md:hidden"
+    >
+      <a
+        class="block w-full bg-primary text-white font-bold text-center py-3 rounded-full shadow-lg"
+        href="#"
+      >
+        無料セミナーに申し込む
+      </a>
+    </div>
+  </body>
+</html>
